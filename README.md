@@ -29,3 +29,7 @@ List of User and their credentials :-
 2) axis@gmail.com, "test123"
 3) pnb@gmail.com, "test123"
 
+For Testing Team Convenience, I have dpeloyed the application on Heroku which is on below url.
+ ->  https://banking-app555.herokuapp.com/payment_transactions
+ 
+ One can directly go to above URL, Use above user's credentials and use the app. Enjoy !!
