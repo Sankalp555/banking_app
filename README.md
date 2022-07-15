@@ -32,6 +32,6 @@ List of User and their credentials :-
 For Login, Email and password will be needed and To send Money, Account number will be needed. 
 
 For Testing Team Convenience, I have deployed the application on Heroku which is on below url.
- ->  https://banking-app555.herokuapp.com/payment_transactions
+ ->  https://banking-app555.herokuapp.com
  
  One can directly go to above URL, Use above user's credentials and use the app. Enjoy !!
