@@ -26,8 +26,8 @@ Steps for Project setup :-
 List of User and their credentials :-
 
 1) sbi@gmail.com , password is "test123", Account Number is "test00001"
-2) axis@gmail.com, password is "test123", Account Number is "test00002"
-3) pnb@gmail.com, password is  "test123", Account Number is "test00003"
+2) pnb@gmail.com, password is "test123", Account Number is "test00002"
+3) axis@gmail.com, password is  "test123", Account Number is "test00003"
 
 For Login, Email and password will be needed and To send Money, Account number will be needed. 
 
