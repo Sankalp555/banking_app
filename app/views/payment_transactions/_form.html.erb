@@ -1,0 +1,25 @@
+<div class="modal-header">
+ <button type="button" class="btn btn-danger" data-dismiss="modal">x</button>
+ <h4 class="modal-title" id="myModalLabel">Make Payment</h4>
+</div>
+
+<%= form_for @payment_transaction do |f| %>
+  <div class="modal-body">
+    <div class="mb-3">
+      <%= f.label :amount, :class => "form-label" %>
+      <%= f.number_field :amount, min: 1, step: 0.5, class: 'form-control', placeholder: "Amount", required: true %>
+      <%= f.hidden_field :bank_account_id, value: @receiver_bank_account.id %>
+    </div>
+    
+    <div class="mb-3">
+      <%= f.label :remarks, :class => "form-label" %>
+      <%= f.text_area :remarks, :class => 'form-control', placeholder: "Remarks" %>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+    <%= f.submit 'Submit', :class => 'btn btn-success' %>
+  </div>
+<% end %>
+
+  

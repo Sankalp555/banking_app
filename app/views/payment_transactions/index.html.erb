@@ -1,0 +1,30 @@
+<table class="table mt-4">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Transcation ID</th>
+      <th scope="col">Transcation Type</th>
+      <th scope="col">Transcation Status</th>
+      <th scope="col">Acc Info</th>
+      <th scope="col">Remarks</th>
+      <th scope="col">Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if @transactions.present? %>
+      <% @transactions.each do |transaction|  %>
+        <tr>
+          <th scope="row"><%= transaction.created_at.strftime("%d-%b-%Y - %I:%M %p") %></th>
+          <td><%= transaction.transaction_id %></td>
+          <td class=<%= transaction_type_class(transaction)%>><%= transaction.transaction_type %></td>
+          <td><%= transaction.status %></td>
+          <td><%= get_accounts_info(transaction) %></td>
+          <td><%= transaction.remarks %></td>
+          <td class=<%= transaction_type_class(transaction)%>><%= transaction.amount.to_s %></td>
+        </tr>
+      <% end %>
+    <% else %>
+      No Data Present
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,10 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres_rails
+  password: postgres
+  host: localhost
+
+development:
+  <<: *default
+  database: banking_app_development

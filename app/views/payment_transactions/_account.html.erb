@@ -1,0 +1,29 @@
+<table class="table table-responsive mt-4">
+  <thead>
+    <tr>
+      <th scope="col">Account Number</th>
+      <th scope="col">Account Holder</th>
+      <th scope="col">Email</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if @bank_account.present? %>
+      <tr>
+        <th scope="row"><%= @bank_account.account_number %></th>
+        <td><%= @bank_account.user_full_name %></td>
+        <td><%= @bank_account.user_email %></td>
+        <td><%= link_to 'Pay Now', new_payment_transaction_path(bank_account_id: @bank_account.id),  {:remote => true, 'data-toggle' =>  "modal", 'data-target' => '#modal-window', class: 'btn btn-primary'}  %>
+        </td>
+      </tr>
+    <% else %>
+      No Account Found  
+    <% end %>
+  </tbody>
+</table>
+
+<div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ <div class="modal-dialog" role="document">
+  <div class="modal-content"></div>
+ </div>
+</div>
