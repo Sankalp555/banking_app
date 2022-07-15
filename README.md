@@ -25,11 +25,13 @@ Steps for Project setup :-
 
 List of User and their credentials :-
 
-1) sbi@gmail.com , "test123"
-2) axis@gmail.com, "test123"
-3) pnb@gmail.com, "test123"
+1) sbi@gmail.com , password is "test123", Account Number is "test00001"
+2) axis@gmail.com, password is "test123", Account Number is "test00002"
+3) pnb@gmail.com, password is  "test123", Account Number is "test00003"
 
-For Testing Team Convenience, I have dpeloyed the application on Heroku which is on below url.
+For Login, Email and password will be needed and To send Money, Account number will be needed. 
+
+For Testing Team Convenience, I have deployed the application on Heroku which is on below url.
  ->  https://banking-app555.herokuapp.com/payment_transactions
  
  One can directly go to above URL, Use above user's credentials and use the app. Enjoy !!
