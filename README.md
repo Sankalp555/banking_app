@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version :- ruby-2.7.1
+* Database :- postgres
+* Rails Version :- rails 6
 
-Things you may want to cover:
 
-* Ruby version
+Steps for Project setup :-
 
-* System dependencies
+1) Take Clone
+2) Install ruby-2.7.1 and use it
+3) Run bundle by :- bundle install
+4) config database.yml file and run following commands
+	
+	a) rake db:create
+	b) rake db:migrate
+	c) rake db:seed
 
-* Configuration
 
-* Database creation
+5) Start the server by :- rails s
 
-* Database initialization
 
-* How to run the test suite
+***Note*** :- "seed.rb" File will be creating all the users and there bank accounts with $1000.00 balance for each user. Then you can login by using below credentials and start your payment transaction.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+List of User and their credentials :-
 
-* ...
+1) sbi@gmail.com , "test123"
+2) axis@gmail.com, "test123"
+3) pnb@gmail.com, "test123"
+
